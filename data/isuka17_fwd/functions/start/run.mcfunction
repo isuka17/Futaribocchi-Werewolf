@@ -22,7 +22,7 @@ scoreboard players set #準備時間 fwd_settings 31
 function isuka17_fwd:start/gamerule
 function isuka17_fwd:start/teams
 function isuka17_fwd:start/countdown/1s
-schedule function isuka17_fwd:start/roles 0.1s
-schedule function isuka17_fwd:start/books 0.2s
-schedule function isuka17_fwd:start/ability 0.3s
-schedule function isuka17_fwd:meeting/opening 180s
+schedule function isuka17_fwd:start/roles 0.1s replace
+schedule function isuka17_fwd:start/books 0.2s replace
+schedule function isuka17_fwd:start/ability 0.3s replace
+schedule function isuka17_fwd:meeting/opening 240s replace

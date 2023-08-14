@@ -15,7 +15,6 @@ scoreboard players set @a fwd_deathcount 0
 scoreboard players set @a fwd_rolenumber 0
 scoreboard players set #fwd fwd_settings 0
 scoreboard players set #meeting fwd_settings 0
-scoreboard players set #準備時間 fwd_settings 0
 tag @a remove fwd_join
 tag @a remove fwd_Team1
 tag @a remove fwd_Team2
@@ -25,6 +24,7 @@ tag @a remove fwd_Team5
 kill @e[tag=fwd_deadbody]
 kill @e[type=item]
 kill @e[type=arrow]
+kill @e[type=area_effect_cloud]
 effect clear @a
 effect give @a saturation 1 100 true
 effect give @a instant_health 1 100 true
@@ -33,6 +33,3 @@ clear @a
 team leave @a
 gamemode creative @a
 scoreboard objectives setdisplay sidebar fwd_settings
-schedule clear isuka17_fwd:meeting/opening
-schedule clear isuka17_fwd:meeting/1s
-schedule clear isuka17_fwd:start/countdown/1s
