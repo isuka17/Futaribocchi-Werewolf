@@ -15,6 +15,7 @@ scoreboard players set @a fwd_deathcount 0
 scoreboard players set @a fwd_rolenumber 0
 scoreboard players set #fwd fwd_settings 0
 scoreboard players set #meeting fwd_settings 0
+scoreboard players set #準備時間 fwd_settings 0
 tag @a remove fwd_join
 tag @a remove fwd_Team1
 tag @a remove fwd_Team2
@@ -33,3 +34,5 @@ team leave @a
 gamemode creative @a
 scoreboard objectives setdisplay sidebar fwd_settings
 schedule clear isuka17_fwd:meeting/opening
+schedule clear isuka17_fwd:meeting/1s
+schedule clear isuka17_fwd:start/countdown/1s
