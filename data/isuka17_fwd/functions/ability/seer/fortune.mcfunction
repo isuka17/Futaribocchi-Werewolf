@@ -1,4 +1,6 @@
 #> 占い
+execute as @a[scores={fwd_seer=-1}] at @s run function isuka17_fwd:ability/seer/message
+
 execute if entity @a[scores={fwd_seer=1}] run tag @a[scores={fwd_playernumber=1}] add fortune
 execute if entity @a[scores={fwd_seer=2}] run tag @a[scores={fwd_playernumber=2}] add fortune
 execute if entity @a[scores={fwd_seer=3}] run tag @a[scores={fwd_playernumber=3}] add fortune

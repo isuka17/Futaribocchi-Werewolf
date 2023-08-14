@@ -1,6 +1,6 @@
 #> 常に実行
 clear @a[tag=fwd_join] glass_bottle
-execute as @e[type=item,nbt={Item:{id:"minecraft:written_book"}}] run data modify entity @s PickupDelay set value 0
+kill @e[type=item,nbt={Item:{id:"minecraft:written_book"}}]
 
 function isuka17_fwd:items/blackout_switch
 function isuka17_fwd:items/koneshima_tears
