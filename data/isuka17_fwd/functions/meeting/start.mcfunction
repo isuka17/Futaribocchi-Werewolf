@@ -9,3 +9,4 @@ execute if score #会議参加人数 fwd_settings matches 3.. run title @a title
 execute if score #会議参加人数 fwd_settings matches 3.. run team join fwd_meeting @a[tag=meeting_join]
 execute if score #会議参加人数 fwd_settings matches 3.. run scoreboard players set #会議時間 fwd_settings 100
 execute if score #会議参加人数 fwd_settings matches 3.. run schedule function isuka17_fwd:meeting/1s 1s
+clear @a[tag=meeting_join] arrow
