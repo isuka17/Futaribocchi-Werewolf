@@ -15,5 +15,7 @@ execute as @a[tag=fortune] unless entity @s[scores={fwd_rolenumber=4}] unless en
 execute if entity @a[tag=fortune,scores={fwd_rolenumber=2}] run tellraw @a[scores={fwd_rolenumber=2}] "自分を占ってどうするんですか・・・？"
 execute if entity @a[tag=fortune,scores={fwd_rolenumber=2}] run scoreboard players enable @a[scores={fwd_rolenumber=2}] fwd_seer
 
+execute as @a[scores={fwd_seer=1..}] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.5
+
 tag @a remove fortune
 scoreboard players set @a fwd_seer 0
