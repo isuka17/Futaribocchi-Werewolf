@@ -1,7 +1,7 @@
 #> 役職設定
 gamerule sendCommandFeedback false
 scoreboard objectives setdisplay sidebar fwd_settings
-tellraw @s {"text":"\n====役職設定====","color":"gold"}
+tellraw @s {"text":"\n=====役職設定=====","color":"gold"}
 tellraw @s [{"text":"預言者：","color":"aqua"},{"text":"有効化","clickEvent":{"action":"run_command","value":"/scoreboard players set 預言者 fwd_settings 1"},"hoverEvent":{"action":"show_text","value":"クリックして預言者を有効化"}},{"text":"  "},{"text":"無効化","clickEvent":{"action":"run_command","value":"/scoreboard players reset 預言者 fwd_settings"},"hoverEvent":{"action":"show_text","value":"クリックして預言者を無効化"}}]
 tellraw @s [{"text":"  探偵：","color":"yellow"},{"text":"有効化","clickEvent":{"action":"run_command","value":"/scoreboard players set 探偵 fwd_settings 1"},"hoverEvent":{"action":"show_text","value":"クリックして探偵を有効化"}},{"text":"  "},{"text":"無効化","clickEvent":{"action":"run_command","value":"/scoreboard players reset 探偵 fwd_settings"},"hoverEvent":{"action":"show_text","value":"クリックして探偵を無効化"}}]
 tellraw @s [{"text":"  狂人：","color":"light_purple"},{"text":"有効化","clickEvent":{"action":"run_command","value":"/scoreboard players set 狂人 fwd_settings 1"},"hoverEvent":{"action":"show_text","value":"クリックして狂人を有効化"}},{"text":"  "},{"text":"無効化","clickEvent":{"action":"run_command","value":"/scoreboard players reset 狂人 fwd_settings"},"hoverEvent":{"action":"show_text","value":"クリックして狂人を無効化"}}]
