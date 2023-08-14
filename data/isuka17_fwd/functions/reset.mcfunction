@@ -22,6 +22,7 @@ tag @a remove fwd_Team3
 tag @a remove fwd_Team4
 tag @a remove fwd_Team5
 kill @e[tag=fwd_deadbody]
+kill @e[tag=meeting_parrot]
 kill @e[type=item]
 kill @e[type=arrow]
 kill @e[type=area_effect_cloud]
