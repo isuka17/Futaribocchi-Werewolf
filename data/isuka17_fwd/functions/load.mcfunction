@@ -11,12 +11,14 @@ scoreboard objectives add fwd_rolenumber dummy {"text":"[ふたりぼっち人�
 scoreboard objectives add fwd_playernumber dummy {"text":"[ふたりぼっち人狼] プレイヤー番号","color":"yellow"}
 scoreboard objectives add fwd_itemnumber dummy {"text":"[ふたりぼっち人狼] 役職番号","color":"yellow"}
 
+team add fwd_meeting {"text":"会議","color":"gold"}
 team add fwd_spectator {"text":"観戦","color":"blue"}
 team add fwd_Team1 {"text":"ふたりぼっち","color":"aqua"}
 team add fwd_Team2 {"text":"ふたりぼっち","color":"yellow"}
 team add fwd_Team3 {"text":"ふたりぼっち","color":"green"}
 team add fwd_Team4 {"text":"ふたりぼっち","color":"light_purple"}
 team add fwd_Team5 {"text":"ふたりぼっち","color":"gold"}
+team modify fwd_meeting nametagVisibility never
 team modify fwd_Team1 nametagVisibility never
 team modify fwd_Team2 nametagVisibility never
 team modify fwd_Team3 nametagVisibility never

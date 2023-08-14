@@ -14,7 +14,13 @@ scoreboard players set @a fwd_blackout_switch 0
 scoreboard players set @a fwd_deathcount 0
 scoreboard players set @a fwd_rolenumber 0
 scoreboard players set #fwd fwd_settings 0
+scoreboard players set #meeting fwd_settings 0
 tag @a remove fwd_join
+tag @a remove fwd_Team1
+tag @a remove fwd_Team2
+tag @a remove fwd_Team3
+tag @a remove fwd_Team4
+tag @a remove fwd_Team5
 kill @e[tag=fwd_deadbody]
 kill @e[type=item]
 kill @e[type=arrow]
@@ -26,3 +32,4 @@ clear @a
 team leave @a
 gamemode creative @a
 scoreboard objectives setdisplay sidebar fwd_settings
+schedule clear isuka17_fwd:meeting/opening
