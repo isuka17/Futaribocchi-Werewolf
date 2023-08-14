@@ -39,3 +39,5 @@ team modify fwd_gold color gold
 team modify fwd_yellow color yellow
 team modify fwd_red color red
 team modify fwd_pink color light_purple
+
+execute unless score 人狼 fwd_settings matches 0.. run scoreboard players set 人狼 fwd_settings 1
