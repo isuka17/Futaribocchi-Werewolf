@@ -3,7 +3,7 @@ scoreboard players remove #会議時間 fwd_settings 1
 execute if score #会議時間 fwd_settings matches 0 run scoreboard players set #meeting fwd_settings 0
 execute if score #会議時間 fwd_settings matches 0 run kill @e[tag=meeting_parrot]
 execute if score #会議時間 fwd_settings matches 0 run schedule clear isuka17_fwd:meeting/1s
-execute if score #会議時間 fwd_settings matches 0 run give @a[tag=meeting_join] arrow
+execute if score #会議時間 fwd_settings matches 0 run give @a[tag=meeting_join] arrow{display:{Name:'{"text":"人狼用矢","color":"red","italic":false}'},HideFlags:1,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 1
 execute if score #会議時間 fwd_settings matches 0 run tag @a remove meeting_join
 execute if score #会議時間 fwd_settings matches 0 run team join fwd_Team1 @a[tag=fwd_Team1]
 execute if score #会議時間 fwd_settings matches 0 run team join fwd_Team2 @a[tag=fwd_Team2]
