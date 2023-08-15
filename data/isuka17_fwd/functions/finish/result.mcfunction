@@ -10,3 +10,4 @@ tellraw @a ""
 
 # リセット
 function isuka17_fwd:reset
+schedule clear isuka17_fwd:meeting/opening
